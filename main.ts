@@ -13,7 +13,9 @@ let temperature: number
 let temperatureValueKelvin: number
 
 // Gets temperature value
+temperature = temperature
 temperature = input.temperature()
+temperatureValueKelvin = temperature + 273.15
 temperatureValueKelvin = Math.round (temperature + 273.15)
 
 
