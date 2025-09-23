@@ -14,8 +14,7 @@ let temperatureValueKelvin: number
 
 // Gets temperature value
 temperature = input.temperature()
-temperatureValueKelvin = (temperature + 273.15)
-temperatureValueKelvin = Math.round (temperatureValueKelvin)
+temperatureValueKelvin = Math.round (temperature + 273.15)
 
 
 // When button A is pressed...
