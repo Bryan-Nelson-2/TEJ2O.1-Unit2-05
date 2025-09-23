@@ -8,19 +8,18 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// Converts temperature to kelvin
+// Variables
 let temperature: number
 let temperatureValueKelvin: number
+
+// When button A is pressed...
+input.onButtonPressed(Button.A, function () {
 
 // Gets temperature value
 temperature = temperature
 temperature = input.temperature()
-temperatureValueKelvin = temperature + 273.15
 temperatureValueKelvin = Math.round (temperature + 273.15)
 
-
-// When button A is pressed...
-input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     basic.showString('The temperature is' + temperatureValueKelvin.toString ()+ 'K')
     basic.clearScreen()
