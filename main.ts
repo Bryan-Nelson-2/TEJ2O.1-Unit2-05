@@ -16,7 +16,6 @@ let temperatureValueKelvin: number
 input.onButtonPressed(Button.A, function () {
 
 // Gets temperature value
-temperature = temperature
 temperature = input.temperature()
 temperatureValueKelvin = Math.round (temperature + 273.15)
 
